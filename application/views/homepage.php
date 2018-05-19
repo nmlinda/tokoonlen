@@ -23,32 +23,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/magnific-popup.css">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/flexslider.css">
 
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/owl.theme.default.min.css">
 	
 	<!-- Date Picker -->
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/bootstrap-datepicker.css">
 	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>fonts/flaticon/font/flaticon.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url()."assets/"; ?>css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -93,7 +93,7 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   	<li style="background-image: url(<?php echo base_url()."assets/images/"; ?>img_bg_1.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -111,7 +111,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   	<li style="background-image: url(<?php echo base_url()."assets/images/"; ?>img_bg_2.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -129,7 +129,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   	<li style="background-image: url(<?php echo base_url()."assets/images/"; ?>img_bg_3.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -154,7 +154,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<a href="shop.html" class="f-product-1" style="background-image: url(images/item-1.jpg);">
+						<a href="shop.html" class="f-product-1" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-1.jpg);">
 							<div class="desc">
 								<h2>Fahion <br>for <br>men</h2>
 							</div>
@@ -163,21 +163,21 @@
 					<div class="col-md-6">
 						<div class="row">
 							<div class="col-md-6">
-								<a href="" class="f-product-2" style="background-image: url(images/item-2.jpg);">
+								<a href="" class="f-product-2" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-2.jpg);">
 									<div class="desc">
 										<h2>New <br>Arrival <br>Dress</h2>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-6">
-								<a href="" class="f-product-2" style="background-image: url(images/item-4.jpg);">
+								<a href="" class="f-product-2" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-4.jpg);">
 									<div class="desc">
 										<h2>Sale <br>20% <br>off</h2>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-12">
-								<a href="" class="f-product-2" style="background-image: url(images/item-3.jpg);">
+								<a href="" class="f-product-2" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-3.jpg);">
 									<div class="desc">
 										<h2>Shoes <br>for <br>men</h2>
 									</div>
@@ -199,7 +199,7 @@
 				<div class="row">
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-5.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-5.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -218,7 +218,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-6.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-6.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -237,7 +237,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-7.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-7.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -256,7 +256,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-8.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-8.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -276,7 +276,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="colorlib-intro" class="colorlib-intro" style="background-image: url(images/cover-img-1.jpg);" data-stellar-background-ratio="0.5">
+		<div id="colorlib-intro" class="colorlib-intro" style="background-image: url(<?php echo base_url()."assets/images/"; ?>cover-img-1.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -316,7 +316,7 @@
 				<div class="row">
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-9.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-9.jpg);">
 								<p class="tag"><span class="sale">Sale</span></p>
 								<div class="cart">
 									<p>
@@ -335,7 +335,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-10.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-10.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -354,7 +354,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-11.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-11.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -373,7 +373,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-12.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-12.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -392,7 +392,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-13.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-13.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -411,7 +411,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-14.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-14.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -430,7 +430,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-15.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-15.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -449,7 +449,7 @@
 					</div>
 					<div class="col-md-3 text-center">
 						<div class="product-entry">
-							<div class="product-img" style="background-image: url(images/item-16.jpg);">
+							<div class="product-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>item-16.jpg);">
 								<p class="tag"><span class="new">New</span></p>
 								<div class="cart">
 									<p>
@@ -482,7 +482,7 @@
 						<div class="owl-carousel2">
 							<div class="item">
 								<div class="testimony text-center">
-									<span class="img-user" style="background-image: url(images/person1.jpg);"></span>
+									<span class="img-user" style="background-image: url(<?php echo base_url()."assets/images/"; ?>person1.jpg);"></span>
 									<span class="user">Alysha Myers</span>
 									<small>Miami Florida, USA</small>
 									<blockquote>
@@ -492,7 +492,7 @@
 							</div>
 							<div class="item">
 								<div class="testimony text-center">
-									<span class="img-user" style="background-image: url(images/person2.jpg);"></span>
+									<span class="img-user" style="background-image: url(<?php echo base_url()."assets/images/"; ?>person2.jpg);"></span>
 									<span class="user">James Fisher</span>
 									<small>New York, USA</small>
 									<blockquote>
@@ -502,7 +502,7 @@
 							</div>
 							<div class="item">
 								<div class="testimony text-center">
-									<span class="img-user" style="background-image: url(images/person3.jpg);"></span>
+									<span class="img-user" style="background-image: url(<?php echo base_url()."assets/images/"; ?>person3.jpg);"></span>
 									<span class="user">Jacob Webb</span>
 									<small>Athens, Greece</small>
 									<blockquote>
@@ -527,7 +527,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);"></a>
+							<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>blog-1.jpg);"></a>
 							<div class="desc">
 								<p class="meta"><span class="day">02</span><span class="month">Mar</span></p>
 								<p class="admin"><span>Posted by:</span> <span>Noah Henderson</span></p>
@@ -538,7 +538,7 @@
 					</div>
 					<div class="col-md-4">
 						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);"></a>
+							<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>blog-2.jpg);"></a>
 							<div class="desc">
 								<p class="meta"><span class="day">02</span><span class="month">Mar</span></p>
 								<p class="admin"><span>Posted by:</span> <span>Noah Henderson</span></p>
@@ -549,7 +549,7 @@
 					</div>
 					<div class="col-md-4">
 						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);"></a>
+							<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url()."assets/images/"; ?>blog-3.jpg);"></a>
 							<div class="desc">
 								<p class="meta"><span class="day">02</span><span class="month">Mar</span></p>
 								<p class="admin"><span>Posted by:</span> <span>Noah Henderson</span></p>
@@ -657,7 +657,7 @@
 							<span class="block"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart2" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
-							<span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+							<span class="block">Demo assets/images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
 						</p>
 					</div>
 				</div>
@@ -670,26 +670,26 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/jquery.flexslider-min.js"></script>
 	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/owl.carousel.min.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/jquery.magnific-popup.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/magnific-popup-options.js"></script>
 	<!-- Date Picker -->
-	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/bootstrap-datepicker.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/jquery.stellar.min.js"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="<?php echo base_url()."assets/"; ?>js/main.js"></script>
 
 	</body>
 </html>
