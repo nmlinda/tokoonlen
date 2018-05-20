@@ -99,7 +99,7 @@ class CI_Config {
 					$server_addr = $_SERVER['SERVER_ADDR'];
 				}
 
-				$base_url = 'http://localhost/tokoonlen';
+				$base_url = 'http://localhost/tokoonlen/';
 			}
 			else
 			{
