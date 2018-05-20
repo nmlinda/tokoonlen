@@ -17,7 +17,10 @@ class Homepage extends CI_Controller {
     public function index()
 	{
         if ($this->session->roles == 1 ){
+            $this->load->view('admin/partials/_head');
+            $this->load->view('admin/partials/_sidebar');
             $this->load->view('admin/homepage');
+            $this->load->view('admin/partials/_footer');
         }
         else{
             $this->load->view('partials/_head');
@@ -26,7 +29,5 @@ class Homepage extends CI_Controller {
         }
         
     }
-    
-    
 
 }
