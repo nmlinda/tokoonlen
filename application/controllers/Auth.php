@@ -44,7 +44,7 @@ class Auth extends CI_Controller {
 						
 			if($insert){
 				$session['email'] = $data->email;
-				$session['role'] = $data->role;
+				$session['roles'] = $data->roles;
 				$session['logged_in'] = TRUE;
 				
 				$this->session->set_userdata($session);
@@ -77,7 +77,7 @@ class Auth extends CI_Controller {
 			
 			if($check_pass){
 				$session['email'] = $check_email->row()->email;
-				$session['role'] = $check_email->row()->role;
+				$session['roles'] = $check_email->row()->roles;
 				$session['logged_in'] = TRUE;
 				
 				$this->session->set_userdata($session);
