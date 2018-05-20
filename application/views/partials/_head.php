@@ -83,7 +83,16 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="contact.html">Contact</a></li>
 							<li><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
-							<li><?php echo anchor('Auth/register','Log in'); ?></li>
+							<li>
+								<?php 
+									if($this->session->logged_in == FALSE){
+										echo anchor('Auth/login', 'Log in');
+									}
+									else{
+										echo anchor('Auth/logout', 'Logout');
+									}
+								?>
+							</li>
 						</ul>
 					</div>
 				</div>

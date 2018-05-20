@@ -2,8 +2,8 @@
 
 <div class="col-md-6 col-md-offset-3">
 	<div class="contact-wrap">
-		<center><h3>Register</h3></center>
-		<form action="<?php echo site_url('Auth/regist'); ?>" method="POST">
+        <center><h3>Register</h3></center>
+        <?php echo form_open('Auth/regist_process', ''); ?>
 			<div class="row form-group">
 				<div class="col-md-12">
 					<label for="name">Name</label>
@@ -30,7 +30,7 @@
 			<div class="form-group text-center">
 				<input type="submit" value="Submit" class="btn btn-success">
 			</div>
-        </form>		
+        <?php echo form_close(); ?>	
         <center>
             Already have an account? <?php echo anchor('Auth/login','Log in'); ?>
         </center>
