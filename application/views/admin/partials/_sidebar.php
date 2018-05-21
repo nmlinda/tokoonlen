@@ -27,8 +27,8 @@
           <!-- Control Sidebar Toggle Button -->
           <li class="user user-menu">
             <?php 
-				echo anchor('Auth/logout', 'Logout','class="hidden-xs"');
-			?>
+				      echo anchor('Auth/logout', 'Logout','class="hidden-xs"');
+			      ?>
           </li>
         </ul>
       </div>
