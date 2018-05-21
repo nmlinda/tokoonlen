@@ -52,9 +52,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
+          <?php echo anchor('','<i class="fa fa-dashboard"></i> Dashboard'); ?>
         </li>
         <li class="treeview">
           <a href="#">
@@ -65,8 +63,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-plus"></i> Create user</a></li>
-            <li><a href="#"><i class="fa fa-cog"></i> Manage user</a></li>
+            <li><?php echo anchor('User','<i class="fa fa-plus"></i> Create user'); ?></li>
+            <li><?php echo anchor('User/manage_user','<i class="fa fa-cog"></i> Manage user'); ?></li>
           </ul>
         </li>
         <li class="treeview">
