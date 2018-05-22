@@ -16,45 +16,49 @@
     <div class="row">
   
       <div class="col-md-8 col-md-offset-2">
-          <!-- Horizontal Form -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Create member</h3>
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form class="form-horizontal">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
-
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                <button type="submit" class="btn btn-info pull-right">Submit</button>
-              </div>
-              <!-- /.box-footer -->
-            </form>
+        <!-- Horizontal Form -->
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title">Create member</h3>
           </div>
-          <!-- /.box -->
+          <!-- /.box-header -->
+            
+          <!-- form start -->
+          <?php echo form_open('user/create', 'class=form-horizontal'); ?>
+          <div class="box-body">
+            <div class="form-group">
+              <label for="name" class="col-sm-2 control-label">Name</label>
+            
+              <div class="col-sm-10">
+                <input type="text" name="name" value="<?php echo set_value('name'); ?>" class="form-control" placeholder="Your name" required autofocus>
+              </div>
+            </div>
+              
+            <div class="form-group">
+              <label for="email" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" name="email" value="<?php echo set_value('email'); ?>" class="form-control" placeholder="Your email" required autofocus>
+                <?php echo form_error('email'); ?>
+              </div>
+            </div>
+			
+            <div class="form-group">
+              <label for="password" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" name="password" value="<?php echo set_value('password'); ?>" class="form-control" placeholder="Your password" required autofocus>
+                <?php echo form_error('password'); ?>
+              </div>
+            </div>
+          </div>
+			    <!-- /.box-body -->
+          <div class="box-footer">
+            <button type="submit" class="btn btn-info pull-right">Submit</button>
+          </div>
+          <!-- /.box-footer -->
+        <?php echo form_close(); ?>	
+        
+        </div>
+        <!-- /.box -->
       </div>
     
     </div>

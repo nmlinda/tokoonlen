@@ -21,7 +21,7 @@
           <li class="user user-menu">
             <a href="#">
               <img src="<?php echo base_url(); ?>assets/admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">name</span>
+              <span class="hidden-xs">$name</span>
             </a>
           </li>
           <!-- Control Sidebar Toggle Button -->
@@ -63,8 +63,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><?php echo anchor('User','<i class="fa fa-plus"></i> Create user'); ?></li>
-            <li><?php echo anchor('User/manage_user','<i class="fa fa-cog"></i> Manage user'); ?></li>
+            <li><?php echo anchor('user/create_user','<i class="fa fa-plus"></i> Create user'); ?></li>
+            <li><?php echo anchor('user/manage_user','<i class="fa fa-cog"></i> Manage user'); ?></li>
           </ul>
         </li>
         <li class="treeview">

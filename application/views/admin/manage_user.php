@@ -16,7 +16,7 @@
     <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
+              <h3 class="box-title">User List</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -45,6 +45,7 @@
                   <div class="col-sm-12">
                     <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                 <thead>
+                <?php echo form_error('email'); ?>
                 <tr role="row">
                   <th class="" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 10px;">
                     No
@@ -55,18 +56,107 @@
                   <th class="" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 184px;">
                     Name
                   </th>
-                  <th class="" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 143px;">
+                  <th class="" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 20px;">
                     Options
                   </th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr role="row" class="odd">
-                  <td>1</td>
-                  <td>Firefox 1.0</td>
-                  <td>Win 98+ / OSX.2+</td>
-                  <td>1.7</td>
-                </tr>
+                
+                  <?php
+                    $no = 1;
+                    foreach($users as $user){
+                    ?>
+                      <tr role="row" class="odd">
+                        <td><?php echo $no++; ?></td>
+                        <td><?php echo $user['email']; ?></td>
+                        <td><?php echo $user['name']; ?></td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-edit<?php echo $user['id']; ?>">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete<?php echo $user['id']; ?>">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                            <!-- .modal delete -->
+                          <div class="modal fade" id="modal-delete<?php echo $user['id']; ?>">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Delete user</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                        Are you sure want to delete this user?
+                                      <div class="callout callout-danger">
+                                        <p>
+                                          <?php echo $user['email']; ?><br>
+                                          <?php echo $user['name']; ?>
+                                        </p>
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                  <?php echo form_open('user/delete/'.$user['id']); ?>
+                                      <button type="button" class="btn btn-default pull-left" data-dismiss="modal">No</button>
+                                      <button type="submit" class="btn btn-danger">Yes</button>
+                                    <?php echo form_close(); ?>	
+                                  </div>
+                              </div>
+                                  <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                          </div>
+
+                            <!--/.modal edit -->
+                            <div class="modal fade" id="modal-edit<?php echo $user['id']; ?>">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Edit User</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    
+                                    <?php echo form_open('user/update/'.$user['id'], 'class=form-horizontal'); ?>
+                                    <div class="box-body">
+                                      <div class="form-group">
+                                        <label for="name" class="col-sm-2 control-label">Name</label>
+
+                                        <div class="col-sm-10">
+                                          <input type="text" name="name" value="<?php echo $user['name']; ?>" class="form-control" placeholder="Your name" required autofocus>
+                                        </div>
+                                      </div>
+              
+                                      <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">Email</label>
+                                        
+                                        <div class="col-sm-10">
+                                          <input type="email" name="email" value="<?php echo $user['email']; ?>" class="form-control" placeholder="Your email" required autofocus>
+                                          
+                                        </div>
+                                      </div>
+
+                                    </div>
+	                                  <!-- /.box-body -->
+                                    <div class="box-footer">
+                                      <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+                                      <button type="submit" class="btn btn-info pull-right">Submit</button>
+                                    </div>
+                                    <!-- /.box-footer -->
+                                    <?php echo form_close(); ?>	
+                                  </div>
+                                  <!-- /.modal-content -->
+                              </div>
+                              <!-- /.modal-dialog -->
+                            </div>
+                            
+                          
+                          </div>
+                        </td>
+                      </tr>
+                    <?php
+                    }
+                  ?>                   
+
                 </tbody>
                 
               </table>

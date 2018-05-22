@@ -90,6 +90,14 @@ class Auth extends CI_Controller {
 		}else{
 			redirect('auth/login');
 		}
+
+		$method = $_SERVER['REQUEST_METHOD'];
+		if ( $method != 'POST'){
+			echo "error";
+		}
+		else{
+			echo json_encode($check_email);
+		}
 	}
 
 	public function logout(){
