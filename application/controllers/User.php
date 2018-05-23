@@ -4,8 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require APPPATH . '/libraries/REST_Controller.php';
 // use application\libraries\REST_Controller;
 
-class User extends REST_Controller {
-
+// class User extends REST_Controller {
+class User extends CI_Controller {
+    
 	public function __construct()
     {
         parent::__construct();
@@ -71,33 +72,35 @@ class User extends REST_Controller {
 
     }
 
-    // public function delete($id){
-    //     // if($this->User_model->delete_user('id')){
-    //     //     $this->response(array('status'=>"success",200));
-    //     // }
+    public function delete($id){
+        if($this->User_model->delete_user('id')){
+            //$this->response(array('status'=>"success",200));
+        }
         
-    //     if($id){
-    //         //delete post
-    //         $delete = $this->User_model->delete_user($id);
+        // cara lain
+        // if($id){
+        //     //delete post
+        //     $delete = $this->User_model->delete_user($id);
             
-    //         if($delete){
-    //             //set the response and exit
-    //             $this->response([
-    //                 'status' => TRUE,
-    //                 'message' => 'User has been removed successfully.'
-    //             ], REST_Controller::HTTP_OK);
-    //         }else{
-    //             //set the response and exit
-    //             $this->response("Some problems occurred, please try again.", REST_Controller::HTTP_BAD_REQUEST);
-    //         }
-    //     }else{
-    //         //set the response and exit
-    //         $this->response([
-    //             'status' => FALSE,
-    //             'message' => 'No user were found.'
-    //         ], REST_Controller::HTTP_NOT_FOUND);
-    //     }
-    //     redirect('user/manage_user');
+        //     if($delete){
+        //         //set the response and exit
+        //         $this->response([
+        //             'status' => TRUE,
+        //             'message' => 'User has been removed successfully.'
+        //         ], REST_Controller::HTTP_OK);
+        //     }else{
+        //         //set the response and exit
+        //         $this->response("Some problems occurred, please try again.", REST_Controller::HTTP_BAD_REQUEST);
+        //     }
+        // }else{
+        //     //set the response and exit
+        //     $this->response([
+        //         'status' => FALSE,
+        //         'message' => 'No user were found.'
+        //     ], REST_Controller::HTTP_NOT_FOUND);
+        // }
+
+        redirect('user/manage_user');
         
-    // }
+    }
 }
